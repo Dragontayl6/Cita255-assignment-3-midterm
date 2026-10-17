@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PixelPantry.CookieDetailPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="8-Bit Cookie Box">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="15">
+
+            <Border
+                HeightRequest="220"
+                BackgroundColor="#F3F3F3"
+                Stroke="#DDDDDD">
+
+                <Label
+                    Text="🍪"
+                    FontSize="100"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+
+            </Border>
+
+            <Label
+                Text="8-Bit Cookie Box"
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="Black" />
+
+            <Label
+                Text="$8.99"
+                FontSize="24"
+                FontAttributes="Bold" />
+
+            <Label
+                Text="Out of Stock"
+                FontSize="18"
+                FontAttributes="Bold"
+                TextColor="Red" />
+
+            <Label
+                Text="Chocolate chip cookies shaped like classic 8-bit game sprites. Unfortunately, this batch is currently sold out."
+                FontSize="16"
+                TextColor="Gray" />
+
+            <Label
+                Text="Quantity"
+                FontSize="16"
+                FontAttributes="Bold" />
+
+            <Entry
+                x:Name="quantityEntry"
+                Placeholder="Enter quantity"
+                Keyboard="Numeric"
+                FontSize="18" />
+
+            <Button
+                Text="Add to Cart"
+                Clicked="AddToCart_Clicked"
+                BackgroundColor="#4F46E5"
+                TextColor="White"
+                FontSize="18"
+                HeightRequest="55"
+                IsEnabled="False" />
+
+            <Label
+                x:Name="messageLabel"
+                Text="This product is out of stock."
+                TextColor="PaleGoldenrod"
+                FontSize="16"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

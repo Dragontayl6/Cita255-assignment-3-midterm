@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PixelPantry.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PixelPantry"
+    Title="Pixel Pantry">
+
+    <TabBar>
+
+        <ShellContent
+            Title="Shop"
+            Route="Shop"
+            ContentTemplate="{DataTemplate local:ShopPage}" />
+
+        <ShellContent
+            Title="Checkout"
+            Route="Checkout"
+            ContentTemplate="{DataTemplate local:CheckoutPage}" />
+
+    </TabBar>
+
+</Shell>

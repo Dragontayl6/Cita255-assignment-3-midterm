@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PixelPantry.ShopPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Shop">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="15">
+
+            <Label
+                Text="Pixel Pantry"
+                FontSize="32"
+                FontAttributes="Bold"
+                TextColor="Black" />
+
+            <Label
+                Text="Game-inspired snacks and collectibles"
+                FontSize="16"
+                TextColor="Gray" />
+
+            <!-- Product 1 -->
+            <Border
+                Stroke="#DDDDDD"
+                StrokeThickness="1"
+                Padding="15">
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="HealthPotion_Tapped" />
+                </Border.GestureRecognizers>
+
+                <VerticalStackLayout Spacing="5">
+
+                    <Label
+                        Text="Health Potion Gummies"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        TextColor="Black" />
+
+                    <Label
+                        Text="Cherry-flavored gummy candies."
+                        FontSize="14"
+                        TextColor="Gray" />
+
+                    <Label
+                        Text="$6.99"
+                        FontSize="16"
+                        FontAttributes="Bold" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+
+            <!-- Product 2 -->
+            <Border
+                Stroke="#DDDDDD"
+                StrokeThickness="1"
+                Padding="15">
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="ManaPotion_Tapped" />
+                </Border.GestureRecognizers>
+
+                <VerticalStackLayout Spacing="5">
+
+                    <Label
+                        Text="Mana Potion Soda"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        TextColor="Black" />
+
+                    <Label
+                        Text="Blue raspberry soda with a magical twist."
+                        FontSize="14"
+                        TextColor="Gray" />
+
+                    <Label
+                        Text="$4.99"
+                        FontSize="16"
+                        FontAttributes="Bold" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+
+            <!-- Product 3 -->
+            <Border
+                Stroke="#DDDDDD"
+                StrokeThickness="1"
+                Padding="15">
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="Cookie_Tapped" />
+                </Border.GestureRecognizers>
+
+                <VerticalStackLayout Spacing="5">
+
+                    <Label
+                        Text="8-Bit Cookie Box"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        TextColor="Black" />
+
+                    <Label
+                        Text="Chocolate chip cookies shaped like game sprites."
+                        FontSize="14"
+                        TextColor="Gray" />
+
+                    <Label
+                        Text="$8.99"
+                        FontSize="16"
+                        FontAttributes="Bold" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+
+            <!-- Product 4 -->
+            <Border
+                Stroke="#DDDDDD"
+                StrokeThickness="1"
+                Padding="15">
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="GoldenCoin_Tapped" />
+                </Border.GestureRecognizers>
+
+                <VerticalStackLayout Spacing="5">
+
+                    <Label
+                        Text="Golden Coin Chocolates"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        TextColor="Black" />
+
+                    <Label
+                        Text="Chocolate coins wrapped in golden foil."
+                        FontSize="14"
+                        TextColor="Gray" />
+
+                    <Label
+                        Text="$7.49"
+                        FontSize="16"
+                        FontAttributes="Bold" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+
+            <Button
+                Text="Go to Checkout"
+                Clicked="Checkout_Clicked"
+                BackgroundColor="#4F46E5"
+                TextColor="White"
+                FontSize="18"
+                HeightRequest="55"
+                Margin="0,10,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

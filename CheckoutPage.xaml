@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PixelPantry.CheckoutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Checkout">
+
+    <VerticalStackLayout Padding="20" Spacing="12">
+        <Label Text="Checkout" FontSize="28" FontAttributes="Bold" />
+
+        <Label Text="Your Cart" FontSize="18" FontAttributes="Bold" />
+
+        <CollectionView x:Name="CartItemsCollection" HeightRequest="200">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="Auto, *">
+                        <Label Text="{Binding}" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <CollectionView.EmptyView>
+                <Label Text="Your cart is empty." TextColor="Gray" />
+            </CollectionView.EmptyView>
+        </CollectionView>
+
+        <Label x:Name="TotalLabel" Text="Total: $0.00" FontSize="18" FontAttributes="Bold" HorizontalOptions="End" />
+
+        <Button Text="Checkout" Clicked="CheckoutButton_Clicked" BackgroundColor="#4F46E5" TextColor="White" HeightRequest="50" />
+    </VerticalStackLayout>
+
+</ContentPage>
